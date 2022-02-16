@@ -73,11 +73,13 @@ function addOrRemoveislandsFromCart(action) {
                     island_in_cart.count--;
                     console.log(island_in_cart.count);
                 }
-
+                
                 let islandTotal = island_in_cart.count * island.price;
+                let totalAmount = islandTotal + islandTotal;
+                if (islandTotal > 0) {
+                    document.getElementById(total).innerHTML = totalAmount;
+                }
 
-
-                console.log(islandTotal);
                 displayislands(cart, "cart");
             };
         });
