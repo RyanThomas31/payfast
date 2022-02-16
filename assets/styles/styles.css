@@ -1,0 +1,112 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(255, 239, 213); 
+    margin: 0 auto;
+}
+
+.container .header {
+    width: 100%;
+    height: 90px;
+    background-color: aqua;
+    display: flex;
+}
+
+.container .header .left-side {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container .header .right-side {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container .header .right-side h3{
+    height: 60px;
+    width: 200px;
+    position: absolute;
+    right: 65px;
+}
+
+.container .header .right-side .fa-shopping-cart {
+    height: 60px;
+    width: 60px;
+    font-size: 50px;
+    position: absolute;
+    right: 3px;
+}
+
+.container .header .left-side .logo {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 10px;
+}
+
+.container .main {
+    width: 100%;
+    text-align: center;
+}
+
+.container .main .islands{
+    height: 500px;
+    text-align: center;
+}
+
+#wrapper { 
+    display: flex;
+}
+
+.main #islands {
+    display: flex;
+    justify-content: center;
+}
+
+.main #islands div{ 
+    width: 400px; 
+    height: 200px; 
+    list-style: none; 
+    background-color: rgb(1, 4, 49); 
+    border-radius: 10px; 
+    margin: 150px; 
+    padding: 5px; 
+    color: white;
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+} 
+#badge {
+     width: 20px; 
+     height: 20px; 
+     background-color: #f0ad4e; 
+     color: white; 
+     padding: 2px 2px; 
+     border-radius: 5px; 
+     margin-left: 10px; 
+     text-align: center;
+     } 
+#islands #badge { /* hides the count badge on the shopping list */ 
+    display: none; 
+} 
+#container { 
+    margin: 50px;
+} 

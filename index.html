@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left-side">
+                <div class="logo">
+
+                </div>
+            </div>
+            <div class="right-side">
+                <h3 class="user-name"></h3>
+                <a class="fa fa-shopping-cart" aria-hidden="true"></a>
+            </div>
+        </div>
+        <div class="main">
+
+            <h2>Islands for sale</h2>
+
+            <div id="islands">
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="container">
+                <h1>Cart</h1>
+                <div id="cart"></div>
+                <p>Total = <span id="total"></span></p>
+                <form action=" https://sandbox.payfast.co.za/eng/process " method="post">
+                    <input type="hidden" name="merchant_id" value="10025247">
+                    <input type="hidden" name="merchant_key" value="pv08ma4z3cxva">
+                    <input type="hidden" name="amount" value="800.00">
+                    <input type="hidden" name="item_name" value="Test Product">
+                    <input type="submit" value="Checkout">
+                 </form> 
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
